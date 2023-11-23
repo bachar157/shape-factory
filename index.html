@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="BACHAR ALHAMADA ">
+    <link rel="shortcut icon" href="assets/favicon.png?v=2" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap">
+    <link rel="stylesheet" href="./assets/style/reset.css">
+    <link rel="stylesheet" href="./assets/style/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script defer src="./assets/script/index.js" type="module"></script>
+    <title>Shape Factory </title>
+  </head>
+  <body>
+    <div id="shapeFactory">
+      <h1>Shape Factory</h1>
+      <select id="shapeSelector">
+        <option value="circle">Circle</option>
+        <option value="square">Square</option>
+      </select>
+      <select id="colorSelector">
+        <option value="#09f">Blue</option>
+        <option value="#9f0">Green</option>
+        <option value="#f90">Orange</option>
+        <option value="#f09">Pink</option>
+        <option value="#90f">Purple</option>
+      </select>
+      <button id="createButton">Create</button>
+      <div id="shapesContainer"></div>
+    </div>
+    <div class="feedback">
+      <h2>Shape Location and info:</h2> 
+      <p class="shape-place"></p>
+      <p class="shape-color"></p>
+    </div>
+    <div class="center-container">
+      <button id="clearButton">Clear All</button>
+    </div>  </body>
+</html>
