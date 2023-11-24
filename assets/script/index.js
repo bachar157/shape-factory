@@ -65,4 +65,7 @@ function clearShapes() {
   
 }
 
-document.getElementById('clearButton').addEventListener('click', clearShapes);
+document.getElementById('clearButton').addEventListener('click', function() {
+  // Reload the page
+  location.reload();
+});
