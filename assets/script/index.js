@@ -32,11 +32,17 @@ class Shape {
 const shapes = [];
 
 function createShape() {
+  if (shapes.length <= 34) {
   const shapeType = getElement('shapeSelector').value;
   const color = getElement('colorSelector').value;
   const newShape = new Shape(shapeType, color, shapes.length + 1);
   shapes.push(newShape);
   displayShape(newShape);
+  }
+  else{
+    shape_color.textContent = 'Maximum number of shapes reached. Cannot create more'
+
+  }
 }
 
 function displayShape(shape) {
@@ -56,6 +62,7 @@ getElement('createButton').addEventListener('click', createShape);
 function clearShapes() {
   const shapesContainer = document.getElementById('shapesContainer');
   shapesContainer.innerHTML = ''; // This clears all the content within the shapes container
+  
 }
 
 document.getElementById('clearButton').addEventListener('click', clearShapes);
